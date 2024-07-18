@@ -22,7 +22,8 @@ app.get('/', (req, res) => {
 app.post('/webhook', (req, res) => {
     const payload = req.body;
     logger.log(`Webhook received: ${JSON.stringify(payload)}`);
-    res.status(200).send(`Webhook received: ${JSON.stringify(payload)}`);
+    console.log("Webhook received:", `${JSON.stringify(payload)}`)
+    res.status(200).send("webhook");
 });
 
 const PORT = 9001;
