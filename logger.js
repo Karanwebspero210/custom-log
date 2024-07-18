@@ -11,6 +11,7 @@ class Logger {
         fs.appendFile(this.logFile, logMessage, (err) => {
             if (err) throw err;
         });
+        console.log("WEBHOOK CALLED");
     }
 }
 
