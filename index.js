@@ -7,7 +7,6 @@ const logger = new Logger();
 
 // Middleware to log requests
 app.use((req, res, next) => {
-    logger.log(`${req.method} ${req.url}`);
     next();
 });
 
